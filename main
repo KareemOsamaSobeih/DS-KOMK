@@ -1,0 +1,11 @@
+#include "Battle.h"
+int main()
+{
+	Battle Game;
+	Game.Read();
+	while (!Game.Ended())
+	{
+		Game.Proceed();
+	}
+	Game.Print();
+}
