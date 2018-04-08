@@ -9,5 +9,5 @@ PaverEnemy::~PaverEnemy()
 }
 void PaverEnemy::SetColor()
 {
-	Clr = DARKOLIVEGREEN;
+	Clr = ORANGE;
 }

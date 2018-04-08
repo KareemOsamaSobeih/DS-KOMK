@@ -3,13 +3,16 @@
 ShieldedFighterEnemy::ShieldedFighterEnemy() : Enemy()
 {
 }
+double ShieldedFighterEnemy::C1 = 0;
+double ShieldedFighterEnemy::C2 = 0;
+double ShieldedFighterEnemy::C3 = 0;
 
 ShieldedFighterEnemy::~ShieldedFighterEnemy()
 {
 }
 void ShieldedFighterEnemy::SetColor()
 {
-	Clr = ORANGERED;
+	Clr = BLACK;
 }
 void ShieldedFighterEnemy::DecrementHealth(double f)
 {

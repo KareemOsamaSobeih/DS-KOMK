@@ -15,7 +15,7 @@ public:
 	static double GetC3();
 	double GetPriority(int t)const;
 private:
-	virtual void DecrementHealth(double f);
 	static double C1, C2, C3;
+	virtual void DecrementHealth(double f);
 
 };

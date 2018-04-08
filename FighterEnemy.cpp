@@ -10,5 +10,5 @@ FighterEnemy::~FighterEnemy()
 
 void FighterEnemy::SetColor()
 {
-	Clr = DARKBLUE;
+	Clr = RED;
 }
