@@ -9,16 +9,12 @@
 class Castle
 {
 	Tower Towers[NoOfRegions];
-
-	//
-	// TODO: Add More Data Members As Needed
-	//
 	
 public:
 
 	Castle();
 	void SetTowersHealth(double h);
-	//
-	// TODO: Add More Member Functions As Needed
-	//
+	void SetTowersFirePower(double f);
+	bool CastleLose()const;
+	
 };
