@@ -2,19 +2,22 @@
 class Tower
 {
 	double Health;
-	int Region;
-	//
-	// TODO: Add More Data Members As Needed
-	//
+	double FirePower;
+	double UnpavedDistance;
 
 public:
 
-	void SetHealth(double h);
-	double GetHealth() const;
+	Tower();    // set data members to zero
+	~Tower();
+	void SetHealth(double h);   
+	void SetFirePower(double f);
+	void DecrementUnpavedDistance(double p);
 
-	//
-	// TODO: Add More Member Functions As Needed
-	//
+	double GetHealth() const;
+	double GetFirePower()const;
+	double GetUnpavedDistance()const;
+	bool IsKilled()const;    //return killed if health = 0
+
 
 };
 
