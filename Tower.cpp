@@ -1,15 +1,23 @@
-#include "Tower.h"
-
-
-void Tower::SetHealth(double h)
+#pragma once
+class Tower
 {
-	if(h > 0)
-		Health = h;
-	else
-		Health = 0; // killed
-}
+	double Health;
+	double FirePower;
+	double UnpavedDistance;
 
-double Tower::GetHealth() const
-{
-	return Health;
-}
+public:
+
+	Tower();    // set data members to zero
+	~Tower();
+	void SetHealth(double h);   
+	void SetFirePower(double f);
+	void DecrementUnpavedDistance(double p);
+
+	double GetHealth() const;
+	double GetFirePower()const;
+	double GetUnpavedDistance()const;
+	bool IsKilled()const;    //return killed if health = 0
+
+
+};
+
